@@ -1,3 +1,5 @@
+'use client';
+
 import useConversation from '@/app/hooks/useConversation';
 import { FullMessageType } from '@/app/types';
 import { useEffect, useRef, useState } from 'react';
