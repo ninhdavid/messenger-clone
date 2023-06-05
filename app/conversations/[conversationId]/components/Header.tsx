@@ -52,7 +52,7 @@ const Header: FC<HeaderProps> = ({ conversation }) => {
 					onClick={() => {
 						setDrawerOpen(true);
 					}}
-					className='text-sky-500 cursor-pointer hover:text-sky-600 transitions'
+					className=' text-sky-500 cursor-pointer hover:text-sky-600 transitions'
 				/>
 			</div>
 		</>

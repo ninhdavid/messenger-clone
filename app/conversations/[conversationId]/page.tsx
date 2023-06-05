@@ -1,6 +1,6 @@
 import EmptyState from '@/app/(site)/components/EmptyState';
 import getConversationById from '@/app/actions/getConversationById';
-import getMEssages from '@/app/actions/getMessages';
+import getMessages from '@/app/actions/getMessages';
 import type { FC } from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
@@ -14,7 +14,7 @@ interface IParams {
 // eslint-disable-next-line no-empty-pattern
 const ConversationID = async ({ params }: { params: IParams }) => {
 	const conversation = await getConversationById(params.conversationId);
-	const messages = await getMEssages(params.conversationId);
+	const messages = await getMessages(params.conversationId);
 
 	if (!conversation) {
 		return (

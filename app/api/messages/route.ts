@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 				body: message,
 				image: image,
 				conversation: {
-					connect: { id: currentUser.id },
+					connect: { id: conversationId },
 				},
 				sender: {
 					connect: {
